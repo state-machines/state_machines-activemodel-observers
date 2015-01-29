@@ -25,5 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '>= 1.6'
   spec.add_development_dependency 'rake', '>= 10'
   spec.add_development_dependency 'appraisal', '>= 1'
-  spec.add_development_dependency 'rspec' , '3.0.0.beta2'
+  spec.add_development_dependency 'rspec' , '~>3.1.0'
 end
