@@ -1,7 +1,5 @@
 require 'state_machines/integrations/active_model'
 require 'rails/observers/active_model'
-require 'rails/observers/active_model'
-require_relative 'observers/version'
 require_relative 'observers/observer_update'
 
 module StateMachines
