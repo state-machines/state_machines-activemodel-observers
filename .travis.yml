@@ -16,6 +16,8 @@ matrix:
   allow_failures:
     - rvm: rbx-2
     - rvm: jruby
+    - gemfile: gemfiles/active_model_4.0.gemfile
+    - gemfile: gemfiles/active_model_edge.gemfile
 
 gemfile:
   - gemfiles/active_model_4.1.gemfile
