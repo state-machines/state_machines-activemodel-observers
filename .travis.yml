@@ -18,7 +18,5 @@ matrix:
     - rvm: jruby
 
 gemfile:
-  - gemfiles/active_model_4.0.gemfile
   - gemfiles/active_model_4.1.gemfile
   - gemfiles/active_model_4.2.gemfile
-  - gemfiles/active_model_edge.gemfile
