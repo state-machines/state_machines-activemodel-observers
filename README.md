@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/seuros/state_machines-activemodel-observers.svg?branch=master)](https://travis-ci.org/seuros/state_machines-activemodel-observers)
-[![Code Climate](https://codeclimate.com/github/seuros/state_machines-activemodel-observers.png)](https://codeclimate.com/github/seuros/state_machines-activemodel-observers)
+[![Build Status](https://travis-ci.org/state-machines/state_machines-activemodel-observers.svg?branch=master)](https://travis-ci.org/state-machines/state_machines-activemodel-observers)
+[![Code Climate](https://codeclimate.com/github/state-machines/state_machines-activemodel-observers.png)](https://codeclimate.com/github/state-machines/state_machines-activemodel-observers)
 # StateMachines: ActiveModel Observers
 
 ActiveModel Observers integration for State Machines
@@ -21,10 +21,11 @@ Or install it yourself as:
 ## Usage
 
 TODO: Write usage instructions here
+TODO: Import/Write tests
 
 ## Contributing
 
-1. Fork it ( https://github.com/seuros/state_machines-activemodel-observers/fork )
+1. Fork it ( https://github.com/state-machines/state_machines-activemodel-observers/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

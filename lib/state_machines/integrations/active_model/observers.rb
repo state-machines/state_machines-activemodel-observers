@@ -1,6 +1,5 @@
 require 'state_machines/integrations/active_model'
 require 'rails/observers/active_model'
-require 'rails/observers/active_model'
 require_relative 'observers/version'
 require_relative 'observers/observer_update'
 
@@ -15,9 +14,9 @@ module StateMachines
 
       # Adds a set of default callbacks that utilize the Observer extensions
       def add_default_callbacks
-        callbacks[:before] << Callback.new(:before) { |object, transition| notify(:before, object, transition) }
-        callbacks[:after] << Callback.new(:after) { |object, transition| notify(:after, object, transition) }
-        callbacks[:failure] << Callback.new(:failure) { |object, transition| notify(:after_failure_to, object, transition) }
+        callbacks[:before] << StateMachines::Callback.new(:before) { |object, transition| notify(:before, object, transition) }
+        callbacks[:after] << StateMachines::Callback.new(:after) { |object, transition| notify(:after, object, transition) }
+        callbacks[:failure] << StateMachines::Callback.new(:failure) { |object, transition| notify(:after_failure_to, object, transition) }
       end
 
       # Notifies observers on the given object that a callback occurred
@@ -60,7 +59,7 @@ module StateMachines
 
       def add_callback(type, options, &block)
         options[:terminator] = callback_terminator
-        @callbacks[type == :around ? :before : type].insert(-2, callback = Callback.new(type, options, &block))
+        @callbacks[type == :around ? :before : type].insert(-2, callback = StateMachines::Callback.new(type, options, &block))
         add_states(callback.known_states)
         callback
       end
