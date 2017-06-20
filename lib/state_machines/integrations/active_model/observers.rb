@@ -9,7 +9,7 @@ module StateMachines
       # Classes that include ActiveModel::Observing
       # will automatically use the ActiveModel integration.
       def self.matching_ancestors
-        %w(ActiveModel ActiveModel::Observing ActiveModel::Validations)
+        [::ActiveModel ::ActiveModel::Observing ::ActiveModel::Validations]
       end
 
       # Adds a set of default callbacks that utilize the Observer extensions
